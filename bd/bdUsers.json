@@ -1,0 +1,83 @@
+[
+  {
+    "id": 0,
+    "name": "Max",
+    "address": {
+      "title": "Moskow",
+      "zip": 23423524,
+      "code": "0-2dfgw17"
+    }
+  },
+  {
+    "id": 1,
+    "name": "Alesha",
+    "address": {
+      "title": "Minsk",
+      "zip": 23423524,
+      "code": "0-we2wr17rtrw"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Papick",
+    "address": {
+      "title": "Polsha",
+      "zip": 23423524,
+      "code": "0-ghjg23435"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Blud",
+    "address": {
+      "title": "Minsk",
+      "zip": 23423524,
+      "code": "0-21nfswf7"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Vash",
+    "address": {
+      "title": "Belgrad",
+      "zip": 23423524,
+      "code": "0-21er7"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Yura",
+    "address": {
+      "title": "Minsk",
+      "zip": 23423524,
+      "code": "0-e2rte17"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Gena",
+    "address": {
+      "title": "Minsk",
+      "zip": 23423524,
+      "code": "0-21sf7"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Ebanty",
+    "address": {
+      "title": "Minsk",
+      "zip": 23423524,
+      "code": "0-21fgh7"
+    }
+  },
+  {
+    "id": 8,
+    "name": "BABANA",
+    "address": {
+      "title": "Minsk",
+      "zip": 23423524,
+      "code": "0-217gh"
+    }
+  }
+]
