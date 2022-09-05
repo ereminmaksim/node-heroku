@@ -27,6 +27,6 @@ app.use((req, res) => {
 });
 
 app.listen(port, host, () => {
-    console.log(`Server is running on http://${host}:${port}`)
+    console.log(`Server iss running on http://${host}:${port}`)
 })
 
