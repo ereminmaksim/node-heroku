@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const main = async () => {
-    await mongoose.connect(process.env.MONGODB_URL,
+    await mongoose.connect(process.env.MONGODB_URL || 'mongodb+srv://eremin-server-aws:4jsj4Q28TV8TQd1U@node-server-cluster.xdfgqyq.mongodb.net/?retryWrites=true&w=majority',
         {
             useNewUrlParser: true,
             useCreateIndex: true,
