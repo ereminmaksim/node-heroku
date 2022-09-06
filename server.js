@@ -1,7 +1,7 @@
+const baseURL = 'https://polar-beach-73696.herokuapp.com/'
 const express = require('express')
 const app = express()
 // getting-started.js
-
 
 const cors = require('cors')
 app.use(cors())
