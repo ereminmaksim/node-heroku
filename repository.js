@@ -1,7 +1,11 @@
 const mongoose = require('mongoose');
 
 const main = async () => {
-    await mongoose.connect(process.env.MONGODB_URI);
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/myusers',
+        {
+            useNewUrlParser: true,
+            useUnifiedTopology: true
+        });
 }
 main().catch(err => console.log(err));
 
