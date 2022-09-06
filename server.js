@@ -16,7 +16,7 @@ app.use(bodyParser.json())
 // app.use('/users', users);
 
 const host = 'localhost'
-const port = 7542
+const port = process.env.PORT || 7542
 
 app.get('/tasks', async (req, res) => {
     res.send("Tasks")
