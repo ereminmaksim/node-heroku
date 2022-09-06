@@ -26,7 +26,7 @@ app.use((req, res) => {
     res.send(404);
 });
 
-app.listen(port, host, () => {
-    console.log(`Server iss running on http://localhost:${port}`)
+app.listen(port, () => {
+    console.log(`Server iss running on ${port}`)
 })
 
