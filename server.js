@@ -11,9 +11,9 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
-//маршрутизация
-// const users = require('./routers/users-router')
-// app.use('/users', users);
+// маршрутизация
+const users = require('./routers/users-router')
+app.use('/users', users);
 
 // const host = 'localhost'
 const port = process.env.PORT || 7542
