@@ -1,12 +1,12 @@
-// const mongoose = require('mongoose');
-//
-// const main = async () => {
-//     await mongoose.connect('mongodb://localhost:27017/myusers');
-// }
-// main().catch(err => console.log(err));
-//
-// const usersSchema = new mongoose.Schema({name: String});
-// const MyUsers = mongoose.model('MyUsers', usersSchema);
+const mongoose = require('mongoose');
+
+const main = async () => {
+    await mongoose.connect('mongodb://localhost:27017/myusers');
+}
+main().catch(err => console.log(err));
+
+const usersSchema = new mongoose.Schema({name: String});
+const MyUsers = mongoose.model('MyUsers', usersSchema);
 
 const getUsers = (search) => {
     if (!search) {
