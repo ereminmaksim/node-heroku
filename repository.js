@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
-
+// 4jsj4Q28TV8TQd1U
 const main = async () => {
-    await mongoose.connect(process.env.MONGODB_URL || 'mongodb+srv://eremin-server-aws:4jsj4Q28TV8TQd1U@node-server-cluster.xdfgqyq.mongodb.net/?retryWrites=true&w=majority',
+    await mongoose.connect(process.env.MONGODB_URL || 'mongodb+srv://eremin-server-aws:4jsj4Q28TV8TQd1U@node-server-cluster.xdfgqyq.mongodb.net/TEST?retryWrites=true&w=majority',
         {
             useNewUrlParser: true,
             useCreateIndex: true,
@@ -10,8 +10,8 @@ const main = async () => {
 }
 main().catch(err => console.log(err));
 
-const usersSchema = new mongoose.Schema({name: String});
-const MyUsers = mongoose.model('MyUsers', usersSchema);
+// const usersSchema = new mongoose.Schema({name: String});
+// const MyUsers = mongoose.model('MyUsers', usersSchema);
 
 const getUsers = (search) => {
     if (!search) {
