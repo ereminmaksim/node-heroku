@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "start": "node server.js ",
-    "start_dev": "nodemon server.js localhost 7542"
+    "start": "node server.js",
+    "start-dev": "nodemon server.js localhost 7542"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
