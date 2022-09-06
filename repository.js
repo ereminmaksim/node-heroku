@@ -1,17 +1,13 @@
 const mongoose = require('mongoose');
 // 4jsj4Q28TV8TQd1U
 const main = async () => {
-    await mongoose.connect(process.env.MONGODB_URL || 'mongodb+srv://eremin-server-aws:4jsj4Q28TV8TQd1U@node-server-cluster.xdfgqyq.mongodb.net/TEST?retryWrites=true&w=majority',
-        {
-            useNewUrlParser: true,
-            useCreateIndex: true,
-            useUnifiedTopology: true
-        });
+    await mongoose.connect(process.env.MONGODB_URL || 'mongodb+srv://eremin-server-aws:4jsj4Q28TV8TQd1U@node-server-cluster.xdfgqyq.mongodb.net/TEST?retryWrites=true&w=majority');
+    console.log("Mongo connected")
 }
 main().catch(err => console.log(err));
 
-// const usersSchema = new mongoose.Schema({name: String});
-// const MyUsers = mongoose.model('MyUsers', usersSchema);
+const usersSchema = new mongoose.Schema({name: String});
+const MyUsers = mongoose.model('MyUsers', usersSchema);
 
 const getUsers = (search) => {
     if (!search) {
@@ -46,4 +42,5 @@ module.exports.addUser = addUser;
 module.exports.deleteUser = deleteUser;
 module.exports.getUser = getUser;
 module.exports.updateUser = updateUser;
+// module.exports.main = main;
 
